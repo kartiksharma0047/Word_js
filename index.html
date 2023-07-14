@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Of Words</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script>
+        let x=document.querySelector("#wrapper");
+        x.innerHTML=" ";
+        function numOfwords(str){
+            if(str.includes(" ")){
+                return str.split(" ").length;
+            }
+            else{
+                return 1;
+            }
+        }
+        console.log(numOfwords("Hello World I am Javascript"));
+        x.innerHTML=numOfwords("Hello World I am Javascript");
+    </script>
+</body>
+</html>
